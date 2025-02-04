@@ -1,6 +1,6 @@
 /* Hypothesis: 
 From my background knowledge in the US and car enthusiast, I believe the Brand will have 
-the most influence on the price. I want to create multiple tables separating the brands and to analyze the models
+the most influence on the price. I want to create multiple queries separating the brands and to analyze the models
 themselves from each brand to notice any trends. */
 
 Use sold_cars;
@@ -13,8 +13,8 @@ SELECT DISTINCT Brand FROM car_price_dataset
 ORDER BY Brand ASC;
 
 
-/*Although I can automate the process of creating the tables(which I tried, I commented out the code below this section of code)
-I ran into too many issues and figure for this instance I'll create them manually since there's not too many tables to create.
+/*Although I can automate the process of creating the queries(which I tried, I commented out the code below this section of code)
+I ran into too many issues and figure for this instance I'll create them manually since there's not too many queries to create.
 */
 
 Use sold_cars;
@@ -68,7 +68,7 @@ SELECT * FROM car_price_dataset
 WHERE Brand = 'Volkswagen';
 
 
-/* Attempt at creating a cursor and automating tables being created by brand. */
+/* Attempt at creating a cursor and automating queries being created by brand. */
 /*
 Use sold_cars;
 Create Procedure curdemo()
