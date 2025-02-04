@@ -3,7 +3,7 @@
 **Skills Acquired:**
 * Comprehending the basic functions of mySQL
 * Selecting and Creating Queries
-* Filtering Tables (Where, Like, Group By)
+* Filtering Queries (Where, Like, Group By)
 * Data Aggregations(COUNT, AVG)
 * Inner Joins
 
