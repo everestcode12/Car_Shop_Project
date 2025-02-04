@@ -137,15 +137,14 @@ ORDER BY count(Brand) DESC;
 
 /* I want to compare the difference between the mileage and the price of
 Toyota's and Audi's. I would think Toyota's would have a higher mileage since 
-most of there line up is economical while Audi's is more luxurious. */
+most of their line up is economical while Audi's is more luxurious. */
 
 Select Brand, Avg(Mileage), Avg(Price) from sold_cars.car_price_dataset
 Where (Brand Like 'T%') OR (Brand Like 'A%')
 Group By Brand
 ;
 
-/*A customer may only be interested in Honda's and BMW's, although I can
-filter out from the main dataset these two brands. I want to try another way
+/*Although I can filter out from the main dataset two brands, I want to try another way
 by using inner-joins */
 
 Drop table Honda_vs_BMW;
@@ -174,7 +173,7 @@ Select Avg(Absolute_Difference_in_Price) As 'Average Difference of Prices betwee
 
 
 /*Bonus:*/
-/* Observing which transmission in a car is sold the most each year. */
+/* Observing which transmission is the most popular each year. */
 
 Select Transmission, Count(*) from sold_cars.car_price_dataset
 group by transmission;
